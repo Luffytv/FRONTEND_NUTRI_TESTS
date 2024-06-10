@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UCP. LN y ISI</title>
+    <link rel="stylesheet" href="styles2.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <p class="logo">UCP. LN y ISI</p>
+        <nav>
+          <form class="card p-4">
+            <div class="input-group">
+              <button type="submit" class="btn btn-secondary">Guardar</button>
+              <input type="text" class="form-control" placeholder="Email  " />
+            </div>
+          </form>
+          <br />
+          <form class="card p-4">
+            <div class="input-group">
+              <button type="submit" class="btn btn-secondary">
+                Descargar datos
+              </button>
+            </div>
+          </form>
+        </nav>
+      </div>
+    </header>
+
+    <canvas id="barChart" width="800" height="400"></canvas>
+
+    <footer>
+      <div class="container">
+        <p>&copy; UCP. LN y ISI</p>
+      </div>
+    </footer>
+
+    <section id="Grafico">
+      <div class="container col-md-10">
+        <script>
+          // Obtener el contexto del canvas
+          const ctx = document.getElementById("barChart").getContext("2d");
+
+          // Función para obtener los datos de promedio desde la API
+          async function fetchAverageData() {
+            try {
+              const response = await axios.get(
+                "https://integrador-nutricion-backend.vercel.app/api/survey/average"
+              );
+              return response.data;
+            } catch (error) {
+              console.error("Error al obtener los datos:", error);
+            }
+          }
+
+          // Función para crear el gráfico de barras
+          async function createBarChart() {
+            const data = await fetchAverageData();
+
+            if (data) {
+              const labels = Object.keys(data);
+              const values = Object.values(data);
+
+              const barChartData = {
+                labels: labels,
+                datasets: [
+                  {
+                    label: "Promedios",
+                    backgroundColor: "rgba(54, 162, 235, 0.2)",
+                    borderColor: "rgba(54, 162, 235, 1)",
+                    borderWidth: 1,
+                    data: values,
+                  },
+                ],
+              };
+
+              const config = {
+                type: "bar",
+                data: barChartData,
+                options: {
+                  scales: {
+                    y: {
+                      beginAtZero: true,
+                    },
+                  },
+                },
+              };
+
+              // Crear el gráfico de barras
+              new Chart(ctx, config);
+            } else {
+              console.error("No se recibieron datos para el gráfico");
+            }
+          }
+
+          createBarChart();
+        </script>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,346 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2.7em;
+}
+h3 {
+  font-size: 2em;
+}
+p {
+  font-size: 1.25em;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size: 1.25em;
+}
+
+button {
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: blueviolet;
+}
+
+button:hover {
+  background-color: rgb(101, 33, 165);
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+}
+
+.color-acento {
+  color: blueviolet;
+}
+
+header {
+  background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+  margin: 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: blueviolet;
+  font-size: 1.6em;
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+header a {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover {
+  color: blueviolet;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 90vh;
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("media/download_image_1717502650901.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#hero h1 {
+  color: white;
+}
+
+#hero h3 {
+  color: white;
+}
+
+#somos .container {
+  text-align: center;
+  padding: 200px 12px;
+}
+
+#Encuesta {
+  display: block;
+  background-color: rgb(30, 30, 30);
+  color: white;
+}
+
+#Encuesta .container {
+  padding: 50px 12px; /* Ajusta el padding superior para mover la sección hacia arriba */
+}
+
+#Encuesta h2 {
+  font-size: 3.2em;
+  text-align: center; /* Centra solo el <h2> */
+}
+
+#caracteristicas .container {
+  text-align: center;
+  padding: 250px 12px;
+}
+
+#caracteristicas li {
+  font-weight: bold;
+}
+
+footer {
+  background-color: rgb(230, 230, 230);
+}
+
+footer p {
+  margin: 0;
+  padding: 12px;
+  color: rgb(100, 100, 100);
+}
+
+footer .container {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* Media queries for larger screens */
+@media (min-width: 850px) {
+  header {
+    position: fixed;
+    width: 100%;
+  }
+
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+  }
+
+  #hero h1 {
+    font-size: 5em;
+  }
+
+  #somos .container {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  #somos .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #somos h2 {
+    margin-top: 0px;
+  }
+
+  #somos .img-container {
+    background-image: url("media/download_image_1717681819160.png");
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 500px;
+  }
+
+  #Encuesta h2 {
+    font-size: 3.2em;
+    text-align: center; /* Centra solo el <h2> */
+  }
+
+  #caracteristicas {
+    background-image: url("media/Captura de pantalla 2024-06-04 174042.png");
+    background-repeat: no-repeat;
+    background-size: 700px 700px;
+    background-position: calc(90vw - 500px) 100px;
+  }
+
+  #caracteristicas .container {
+    text-align: initial;
+    padding: 100px 12px; /* Ajusta el padding superior para mover la sección hacia arriba */
+  }
+
+  #caracteristicas ul {
+    margin-left: 100px;
+  }
+
+  footer .container {
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 1200px) {
+  #caracteristicas {
+    background-position-x: calc(100vw - 90vh);
+  }
+}
+
+#thankYouMessage {
+  position: fixed;
+  bottom: 60px; /* Cambia la posición inferior para evitar que se superponga con #caracteristicas */
+  left: 0;
+  width: 100%;
+  padding: 20px; /* Mantén el mismo padding para el mensaje */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Mantén el mismo fondo semi-transparente */
+  text-align: center;
+  z-index: 9999; /* Mantén el mismo z-index para mantenerlo sobre el contenido */
+}
+/* Media queries for smaller screens */
+@media (max-width: 850px) {
+  header .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header nav {
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+
+  #hero {
+    padding: 0px;
+  }
+
+  #hero h1 {
+    font-size: 2.5em;
+  }
+
+  #hero h3 {
+    font-size: 1.5em;
+  }
+
+  #somos .container {
+    padding: 50px 15px;
+  }
+
+  #somos .texto {
+    width: 100%;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  #somos .img-container {
+    height: 100px;
+    width: 100%;
+  }
+
+  #caracteristicas .container {
+    padding: 100px;
+  }
+
+  #caracteristicas ul {
+    margin-left: 0;
+  }
+
+  #caracteristicas {
+    background: none;
+  }
+}
+
+#Encuesta .form-check-input {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  outline: none;
+  cursor: pointer;
+}
+
+#Encuesta .form-check-input:checked {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+#Encuesta .form-check-input:focus {
+  box-shadow: 0 0 5px #000000;
+}
+#Encuesta h2 {
+  display: flex;
+}
+
+#caracteristicas ul {
+  margin-left: 0;
+  text-align: flex;
+}
+.form-check {
+  max-width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+}

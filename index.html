@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UCP. LN y ISI</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <p class="logo">UCP. LN y ISI</p>
+            <nav>
+                <a href="#somos">Quienes Somos</a>
+                <a href="#Encuesta">Encuesta</a>
+                <a href="#caracteristicas">Características</a>
+                <a class="d-none" href="/resultados.html">Resultados</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <h1>Creando las mejores <br>galletitas integrales</h1><br><br>
+        <h3> Las galletitas pepas integrales son una deliciosa opción de gusto dulce con un aroma a chocolate.</h3>
+        <h3> Tienen una textura suave al paladar, no siendo ni crujientes ni crocantes, y su color es amarronado.</h3>
+        <h3> Estas galletitas, ofrecen un gran aporte de saciedad con una cantidad mínima, destacándose por sus cualidades nutricionales.</h3>
+      </section>
+
+    <section id="somos">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+              
+                <h2>Somos <span class="color-acento">UCP. LN y ISI</span></h2>
+                <p>Somos los alumnos de la Facultad Cuenca del Plata, de las carreras de Licenciatura en Nutrición e Ingeniería en Sistemas, y hemos unido fuerzas para realizar un emocionante proyecto colaborativo centrado en la creación y recolección de datos sobre unas galletitas pepas integrales. Estudiantes de diferentes niveles, desde 2º hasta 5º año, combinamos nuestros conocimientos y habilidades para lograr un objetivo común. Como grupo de Ingeniería en Sistemas, desarrollamos una plataforma en línea para la creación y administración de encuestas, recopilando datos esenciales sobre la aceptación y preferencias de las galletitas integrales. Nuestros compañeros de Nutrición diseñaron la receta de las galletitas, asegurándose de que cumplieran con las cualidades nutricionales adecuadas y promovieran una alimentación saludable.</p>
+              
+              </div>
+        </div>
+    </section>
+
+    <section id="Encuesta">
+        <div class="container">
+            <div class="container-fluid d-flex justify-content-center align-items-center">
+                <div class="card border-light shadow p-4 rounded-lg w-100">
+                  <div class="card-body">
+
+                    <section id="Testeando2" required>
+                      <div class="container" >
+                        <h2>Encuesta</h2><br>
+                        <p>Por favor, responda las siguientes preguntas.</p>
+
+
+                        <form id="surveyForm" >
+                          <div class="form-check">
+                            <div class="form-check">
+                              <label for="age"><h4>Edad</h4></label>
+                              <input type="number" id="age" name="age" min="0" required>
+                          </div><br>
+                         <!-- Sabor General -->
+                        <div class="form-check">
+                          <h4>¿Cómo calificaría el sabor general de las galletitas pepas integrales?</h4><br>
+                          <input class="form-check-input" type="radio" name="generalFlavor" id="generalFlavor1" value="1">
+                          <label class="form-check-label" for="generalFlavor1">Muy desagradable</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="generalFlavor" id="generalFlavor2" value="2">
+                          <label class="form-check-label" for="generalFlavor2">Desagradable</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="generalFlavor" id="generalFlavor3" value="3">
+                          <label class="form-check-label" for="generalFlavor3">Neutral</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="generalFlavor" id="generalFlavor4" value="4">
+                          <label class="form-check-label" for="generalFlavor4">Agradable</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="generalFlavor" id="generalFlavor5" value="5">
+                          <label class="form-check-label" for="generalFlavor5">Muy agradable</label>
+                        </div><br>
+
+                        <!-- Aroma -->
+                        <div class="form-check">
+                          <h4>¿Cómo calificaría el aroma a chocolate de las galletitas?</h4><br>
+                          <input class="form-check-input" type="radio" name="chocolateAroma" id="chocolateAroma1" value="1">
+                          <label class="form-check-label" for="chocolateAroma1">Muy desagradable</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="chocolateAroma" id="chocolateAroma2" value="2">
+                          <label class="form-check-label" for="chocolateAroma2">Desagradable</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="chocolateAroma" id="chocolateAroma3" value="3">
+                          <label class="form-check-label" for="chocolateAroma3">Neutral</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="chocolateAroma" id="chocolateAroma4" value="4">
+                          <label class="form-check-label" for="chocolateAroma4">Agradable</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="chocolateAroma" id="chocolateAroma5" value="5">
+                          <label class="form-check-label" for="chocolateAroma5">Muy agradable</label>
+                        </div><br>
+
+                        <!-- Textura en la Boca -->
+                        <div class="form-check">
+                          <h4>¿Cómo calificaría la textura suave de las galletitas al paladar?</h4><br>
+                          <input class="form-check-input" type="radio" name="mouthTexture" id="mouthTexture1" value="1">
+                          <label class="form-check-label" for="mouthTexture1">Muy desagradable</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="mouthTexture" id="mouthTexture2" value="2">
+                          <label class="form-check-label" for="mouthTexture2">Desagradable</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="mouthTexture" id="mouthTexture3" value="3">
+                          <label class="form-check-label" for="mouthTexture3">Neutral</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="mouthTexture" id="mouthTexture4" value="4">
+                          <label class="form-check-label" for="mouthTexture4">Agradable</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="mouthTexture" id="mouthTexture5" value="5">
+                          <label class="form-check-label" for="mouthTexture5">Muy agradable</label>
+                        </div><br>
+
+                        <!-- Color -->
+                        <div class="form-check">
+                          <h4>¿Cómo calificaría el color amarronado de las galletitas?</h4><br>
+                          <input class="form-check-input" type="radio" name="cookieColor" id="cookieColor1" value="1">
+                          <label class="form-check-label" for="cookieColor1">Muy desagradable</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="cookieColor" id="cookieColor2" value="2">
+                          <label class="form-check-label" for="cookieColor2">Desagradable</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="cookieColor" id="cookieColor3" value="3">
+                          <label class="form-check-label" for="cookieColor3">Neutral</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="cookieColor" id="cookieColor4" value="4">
+                          <label class="form-check-label" for="cookieColor4">Agradable</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="cookieColor" id="cookieColor5" value="5">
+                          <label class="form-check-label" for="cookieColor5">Muy agradable</label>
+                        </div><br>
+
+                        <!-- Satisfacción General -->
+                        <div class="form-check">
+                          <h4>¿Qué tan satisfecho se siente con las galletitas en general?</h4><br>
+                          <input class="form-check-input" type="radio" name="generalSatisfaction" id="generalSatisfaction1" value="1">
+                          <label class="form-check-label" for="generalSatisfaction1">Muy insatisfecho</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="generalSatisfaction" id="generalSatisfaction2" value="2">
+                          <label class="form-check-label" for="generalSatisfaction2">Insatisfecho</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="generalSatisfaction" id="generalSatisfaction3" value="3">
+                          <label class="form-check-label" for="generalSatisfaction3">Neutral</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="generalSatisfaction" id="generalSatisfaction4" value="4">
+                          <label class="form-check-label" for="generalSatisfaction4">Satisfecho</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="generalSatisfaction" id="generalSatisfaction5" value="5">
+                          <label class="form-check-label" for="generalSatisfaction5">Muy satisfecho</label>
+                        </div><br>
+
+                        <!-- Preguntas Descriptivas (Características Sensoriales Específicas) -->
+
+                        <!-- Intensidad del Sabor Dulce -->
+                        <div class="form-check">
+                          <h4>¿Cómo describiría la intensidad del sabor dulce en las galletitas?</h4><br>
+                          <input class="form-check-input" type="radio" name="sweetnessIntensity" id="sweetnessIntensity1" value="1">
+                          <label class="form-check-label" for="sweetnessIntensity1">Muy débil</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="sweetnessIntensity" id="sweetnessIntensity2" value="2">
+                          <label class="form-check-label" for="sweetnessIntensity2">Débil</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="sweetnessIntensity" id="sweetnessIntensity3" value="3">
+                          <label class="form-check-label" for="sweetnessIntensity3">Moderada</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="sweetnessIntensity" id="sweetnessIntensity4" value="4">
+                          <label class="form-check-label" for="sweetnessIntensity4">Fuerte</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="sweetnessIntensity" id="sweetnessIntensity5" value="5">
+                          <label class="form-check-label" for="sweetnessIntensity5">Muy fuerte</label>
+                        </div><br>
+
+                        <!-- Intensidad del Aroma a Chocolate -->
+                        <div class="form-check">
+                          <h4>¿Cómo describiría la intensidad del aroma a chocolate en las galletitas?</h4><br>
+                          <input class="form-check-input" type="radio" name="chocolateAromaIntensity" id="chocolateAromaIntensity1" value="1">
+                          <label class="form-check-label" for="chocolateAromaIntensity1">Muy débil</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="chocolateAromaIntensity" id="chocolateAromaIntensity2" value="2">
+                          <label class="form-check-label" for="chocolateAromaIntensity2">Débil</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="chocolateAromaIntensity" id="chocolateAromaIntensity3" value="3">
+                          <label class="form-check-label" for="chocolateAromaIntensity3">Moderada</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="chocolateAromaIntensity" id="chocolateAromaIntensity4" value="4">
+                          <label class="form-check-label" for="chocolateAromaIntensity4">Fuerte</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="chocolateAromaIntensity" id="chocolateAromaIntensity5" value="5">
+                          <label class="form-check-label" for="chocolateAromaIntensity5">Muy fuerte</label>
+                        </div><br>
+
+                        <!-- Textura Suave -->
+                        <div class="form-check">
+                          <h4>¿Cómo describiría la suavidad de las galletitas al morderlas?</h4><br>
+                          <input class="form-check-input" type="radio" name="softTexture" id="softTexture1" value="1">
+                          <label class="form-check-label" for="softTexture1">Muy baja</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="softTexture" id="softTexture2" value="2">
+                          <label class="form-check-label" for="softTexture2">Baja</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="softTexture" id="softTexture3" value="3">
+                          <label class="form-check-label" for="softTexture3">Moderada</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="softTexture" id="softTexture4" value="4">
+                          <label class="form-check-label" for="softTexture4">Alta</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="softTexture" id="softTexture5" value="5">
+                          <label class="form-check-label" for="softTexture5">Muy alta</label>
+                        </div><br>
+
+                        <!-- Nivel de Saciedad -->
+                        <div class="form-check">
+                          <h4>¿Qué tan saciado se siente después de consumir una pequeña cantidad de galletitas?</h4><br>
+                          <input class="form-check-input" type="radio" name="satietyLevel" id="satietyLevel1" value="1">
+                          <label class="form-check-label" for="satietyLevel1">Nada saciado</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="satietyLevel" id="satietyLevel2" value="2">
+                          <label class="form-check-label" for="satietyLevel2">Poco saciado</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="satietyLevel" id="satietyLevel3" value="3">
+                          <label class="form-check-label" for="satietyLevel3">Moderadamente saciado</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="satietyLevel" id="satietyLevel4" value="4">
+                          <label class="form-check-label" for="satietyLevel4">Bastante saciado</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="satietyLevel" id="satietyLevel5" value="5">
+                          <label class="form-check-label" for="satietyLevel5">Muy saciado</label>
+                        </div><br>
+
+                        <!-- Tamaño Percibido -->
+                        <div class="form-check">
+                          <h4>¿Cómo describiría el tamaño de las galletitas?</h4><br>
+                          <input class="form-check-input" type="radio" name="perceivedSize" id="perceivedSize1" value="1">
+                          <label class="form-check-label" for="perceivedSize1">Muy pequeño</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="perceivedSize" id="perceivedSize2" value="2">
+                          <label class="form-check-label" for="perceivedSize2">Pequeño</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="perceivedSize" id="perceivedSize3" value="3">
+                          <label class="form-check-label" for="perceivedSize3">Moderado</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="perceivedSize" id="perceivedSize4" value="4">
+                          <label class="form-check-label" for="perceivedSize4">Grande</label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="perceivedSize" id="perceivedSize5" value="5">
+                          <label class="form-check-label" for="perceivedSize5">Muy grande</label>
+                        </div><br><br>
+                       
+
+                        <div class="d-grid gap-2 col-3 mx-auto">
+                            <button class="btn btn-primary" type="submit">Enviar</button>
+                        </div>
+                        </form>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="caracteristicas">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 ">
+                  <div class="receta">
+                      <h2>Receta de Galletitas Pepas Integrales</h2>
+                      <ul>
+                        <li>INGREDIENTES 👩🏽‍🍳:</li>
+                        <li>👆🏻1 huevo.</li>
+                        <li>👆🏻1/2 taza de azúcar mascabo.</li>
+                        <li>👆🏻mantequilla de maní.</li>
+                        <li>👆🏻1 cda de polvo de hornear.</li>
+                        <li>👆🏻1/2 taza de cacao amargo.</li>
+                        <li>👆🏻1 taza de harina integral.</li>
+                        <li>👆🏻C/n chocolate blanco sin azúcar.</li>
+                        <li>👆🏻1/3 taza de leche descremada.</li>
+                    </ul>
+                      <p><strong>PREPARACIÓN 👩🏽‍🍳:</strong></p>
+                      <ol>
+                          <li>Colocar en un bowl la harina integral, el cacao amargo, el polvo de hornear, el azúcar mascabo, la leche, el huevo. Mezclar e integrar.</li>
+                          <li>Formar la masa. Si hace falta más humedad, añadir más leche; caso contrario, añadir más harina.</li>
+                          <li>Formar las pepas y colocar en una asadera con rocío vegetal, llevando a horno moderado por 20 minutos.</li>
+                          <li>Dejar enfriar. Por otro lado, derretir el chocolate blanco y mezclar con la de mantequilla de maní. Rellenar las galletitas.</li>
+                      </ol>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <div id="thankYouMessage" style="display: none;">
+    <h2>¡Gracias por completar la encuesta!</h2>
+</div>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; UCP. LN y ISI</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+    document.getElementById('surveyForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Evitar la recarga de la página por defecto al enviar el formulario
+        const form = event.target;
+        
+
+        const questions = [
+            'generalFlavor', 'chocolateAroma', 'mouthTexture', 'cookieColor',
+            'generalSatisfaction', 'sweetnessIntensity', 'chocolateAromaIntensity',
+            'softTexture', 'satietyLevel', 'perceivedSize'
+        ];
+        let allAnswered = true;
+        for (const question of questions) {
+            const radios = form.elements[question];
+            let answered = false;
+            for (const radio of radios) {
+                if (radio.checked) {
+                    answered = true;
+                    break;
+                }
+            }
+            if (!answered) {
+                allAnswered = false;
+                break;
+            }
+        }
+        if (!allAnswered) {
+            alert('Por favor, responde todas las preguntas antes de enviar la encuesta.');
+        } else {
+            document.getElementById('Encuesta').style.display = 'none';
+            document.getElementById('thankYouMessage').style.display = 'block';
+            // Aquí puedes agregar el código para enviar los datos del formulario con Axios
+        }
+        // Crear el objeto con los datos del formulario
+        const formData = {
+          age: document.getElementById('age').value,
+          generalFlavor: document.querySelector('input[name="generalFlavor"]:checked').value,
+          chocolateAroma: document.querySelector('input[name="chocolateAroma"]:checked').value,
+          mouthTexture: document.querySelector('input[name="mouthTexture"]:checked').value,
+          cookieColor: document.querySelector('input[name="cookieColor"]:checked').value,
+          generalSatisfaction: document.querySelector('input[name="generalSatisfaction"]:checked').value,
+          sweetnessIntensity: document.querySelector('input[name="sweetnessIntensity"]:checked').value,
+          chocolateAromaIntensity: document.querySelector('input[name="chocolateAromaIntensity"]:checked').value,
+          softTexture: document.querySelector('input[name="softTexture"]:checked').value,
+          satietyLevel: document.querySelector('input[name="satietyLevel"]:checked').value,
+          perceivedSize: document.querySelector('input[name="perceivedSize"]:checked').value
+        };
+
+        axios.post(`https://integrador-nutricion-backend.vercel.app/api/survey`, formData)
+        .then(function(response) {
+            console.log(response);
+            document.getElementById('Encuesta').style.display = 'none';
+            document.getElementById('thankYouMessage').style.display = 'block';
+        })
+        .catch(function(error) {
+            console.error('Hubo un error al enviar la encuesta:', error);
+        });
+    });
+});
+
+      
+</script>    
+</body>
+</html>
